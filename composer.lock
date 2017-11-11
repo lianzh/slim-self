@@ -1,0 +1,65 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "cfedbda56d7c0c51e2de9fd9e57e3634",
+    "packages": [
+        {
+            "name": "lianzh/sql",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lianzh/sql.git",
+                "reference": "43a8a70ab41f5fc78a85786b34fec48a78fa69b8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lianzh/sql/zipball/43a8a70ab41f5fc78a85786b34fec48a78fa69b8",
+                "reference": "43a8a70ab41f5fc78a85786b34fec48a78fa69b8",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mbstring": "*",
+                "php": ">=5.4"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [],
+                "files": [],
+                "psr-4": {
+                    "LianzhSQL\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache License Version 2.0"
+            ],
+            "authors": [
+                {
+                    "name": "toohamster",
+                    "email": "449211678@qq.com"
+                }
+            ],
+            "description": "a light sql query lib for php5.4",
+            "homepage": "https://github.com/lianzh/sql",
+            "keywords": [
+                "php",
+                "sql"
+            ],
+            "time": "2017-11-11T05:24:52+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {
+        "php": ">=5.4",
+        "ext-mbstring": "*"
+    },
+    "platform-dev": []
+}

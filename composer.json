@@ -1,0 +1,33 @@
+{
+    "name": "lianzh/slim-self",
+    "description": "a slim self project for php5.4",
+    "keywords": ["slim", "php"],
+    "license": "Apache License Version 2.0",
+    "homepage": "https://github.com/lianzh/slim-self",
+    "support": {
+        "issues": "https://github.com/lianzh/slim-self/issues",
+        "source": "https://github.com/lianzh/slim-self"
+    },
+    "authors": [
+        {
+            "name": "toohamster",
+            "email": "449211678@qq.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4",
+        "ext-mbstring": "*",        
+        "lianzh/sql": "*"
+    },
+    "require-dev": {
+        
+    },
+    "autoload": {
+        "classmap": [],
+        "files": [],
+        "psr-4": {
+        
+        }
+    },
+    "minimum-stability": "dev"
+}

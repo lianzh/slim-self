@@ -9,6 +9,12 @@ $container['renderer'] = function ($c) {
     return new \Slim\Views\PhpRenderer($settings['template_path']);
 };
 
+// viewlayer renderer
+$container['viewlayer'] = function ($c) {
+    $settings = $c->get('settings')['renderer'];
+    return new \LianzhView\Renderer($settings['template_path']);
+};
+
 // monolog
 $container['logger'] = function ($c) {
     $settings = $c->get('settings')['logger'];

@@ -98,7 +98,6 @@ function t2js($content)
     return str_replace(array("\r", "\n"), array('', '\n'), addslashes($content));
 }
 
-
 /**
  * fast_uuid 为模型生成 64 位整数或混淆字符串的不重复 ID
  * 
@@ -158,31 +157,6 @@ function prety_printr($vars, $label = '', $return = false)
 
     if ($return) { return $content; }
     echo $content;
-}
-
-/**
- * 重定向浏览器到指定的 URL
- * 
- * @param string $url
- * @param int $delay
- */
-function redirect($url, $delay =0)
-{
-    $delay = (int) $delay;
-    if (headers_sent() || $delay > 0)
-    {
-        $out = '<html>
-        <head>
-        <meta http-equiv="refresh" content="%d;URL=%s" />
-        </head>
-        </html>';
-        echo sprintf($out, $url, $delay);
-    }
-    else
-    {
-        header("Location: {$url}");
-    }       
-    exit;
 }
 
 /**

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "3412623c73b4a0ef089767ae39d938c5",
+    "content-hash": "e04e6c11052ac3d4bd14809913bea9dd",
     "packages": [
         {
             "name": "container-interop/container-interop",
@@ -36,6 +36,96 @@
             "description": "Promoting the interoperability of container objects (DIC, SL, etc.)",
             "homepage": "https://github.com/container-interop/container-interop",
             "time": "2017-02-14T19:40:03+00:00"
+        },
+        {
+            "name": "lianzh/mail",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lianzh/mail.git",
+                "reference": "faa07bdcbaff2dbc23973c130430d07fa2b0b338"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lianzh/mail/zipball/faa07bdcbaff2dbc23973c130430d07fa2b0b338",
+                "reference": "faa07bdcbaff2dbc23973c130430d07fa2b0b338",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mbstring": "*",
+                "php": ">=5.4",
+                "psr/log": "~1.0",
+                "swiftmailer/swiftmailer": "~4.2|~5.0"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [],
+                "files": [],
+                "psr-4": {
+                    "LianzhMail\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache License Version 2.0"
+            ],
+            "authors": [
+                {
+                    "name": "toohamster",
+                    "email": "449211678@qq.com"
+                }
+            ],
+            "description": "a quick mail send php lib",
+            "homepage": "https://github.com/lianzh/mail",
+            "keywords": [
+                "mail",
+                "php"
+            ],
+            "time": "2017-11-14T09:27:49+00:00"
+        },
+        {
+            "name": "lianzh/php-viewlayer",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lianzh/php-viewlayer.git",
+                "reference": "ae2cca0a5328b79c8144cfc4a448acf316c350dc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lianzh/php-viewlayer/zipball/ae2cca0a5328b79c8144cfc4a448acf316c350dc",
+                "reference": "ae2cca0a5328b79c8144cfc4a448acf316c350dc",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4",
+                "psr/http-message": "^1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "LianzhView\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "toohamster",
+                    "email": "449211678@qq.com"
+                }
+            ],
+            "description": "Render PHP viewlayer scripts into a PSR-7 Response object.",
+            "keywords": [
+                "php",
+                "phtml",
+                "renderer",
+                "template",
+                "view"
+            ],
+            "time": "2017-11-14T11:51:49+00:00"
         },
         {
             "name": "lianzh/sql",
@@ -517,6 +607,60 @@
                 "router"
             ],
             "time": "2017-11-04T08:51:40+00:00"
+        },
+        {
+            "name": "swiftmailer/swiftmailer",
+            "version": "5.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/swiftmailer/swiftmailer.git",
+                "reference": "93df08e2dadf7ae27fef6eb7dd4ad4cdbd1e6b5f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/93df08e2dadf7ae27fef6eb7dd4ad4cdbd1e6b5f",
+                "reference": "93df08e2dadf7ae27fef6eb7dd4ad4cdbd1e6b5f",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "require-dev": {
+                "mockery/mockery": "~0.9.1",
+                "symfony/phpunit-bridge": "~3.2"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "5.4-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "lib/swift_required.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Chris Corbyn"
+                },
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                }
+            ],
+            "description": "Swiftmailer, free feature-rich PHP mailer",
+            "homepage": "http://swiftmailer.symfony.com",
+            "keywords": [
+                "email",
+                "mail",
+                "mailer"
+            ],
+            "time": "2017-08-29T20:43:58+00:00"
         }
     ],
     "packages-dev": [],

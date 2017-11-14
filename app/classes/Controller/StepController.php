@@ -2,7 +2,6 @@
 
 namespace SelfApp\Controller;
 
-use SelfApp\Helper\Debuger;
 use SelfApp\Helper\Arrays;
 
 class StepController extends BaseController
@@ -20,10 +19,10 @@ class StepController extends BaseController
         
         $arr = $this->app->db->sqlMaster()->getDataSource()->all('show tables');
 
-        Debuger::dump($arr);
+        dump($arr);
 		
 		$this->viewData['get'] = $_GET;
-		$this->viewData['name'] = '申昊晨';
+		$this->viewData['name'] = '小明和小红';
 		$this->viewData['mn'] = Arrays::val($args, 'mn');
 
         return $this->view($response, 'step/index.phtml');

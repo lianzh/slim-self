@@ -52,4 +52,11 @@ return [
 	    'from' => ['address' => 'youraddress', 'name' => 'yoursitetitle'],
 
 	],	
+
+	'ErrorHandler'	=> [
+		'level' => E_ALL | E_STRICT,
+        'exception' => 'SelfApp\\Helper\\ErrorHandler::exception',
+        'userlevel' => 'SelfApp\\Helper\\ErrorHandler::userlevel',
+        'fatal'     => 'SelfApp\\Helper\\ErrorHandler::fatal',
+	],
 ];

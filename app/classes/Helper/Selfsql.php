@@ -1,4 +1,5 @@
 <?php
+
 namespace SelfApp\Helper;
 
 use PDO;

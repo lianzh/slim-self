@@ -49,7 +49,7 @@ abstract class BaseController
         // var_dump(get_class($this));
         // // print_r(func_get_args());
 
-        print_r(func_get_args());
+        dump(func_get_args());
    	}
 
 

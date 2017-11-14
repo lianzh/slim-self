@@ -18,6 +18,8 @@
         "php": ">=5.4",
         "ext-mbstring": "*",        
         "lianzh/sql": "*",
+        "lianzh/mail": "*",
+        "monolog/monolog": "~1.11",
         "slim/slim": "^3.0",
         "slim/php-view": "^2.2"
     },

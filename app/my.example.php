@@ -16,7 +16,7 @@ return [
 				],
 
 			'attr'	=> [
-					PDO::ATTR_PERSISTENT => false,
+					\PDO::ATTR_PERSISTENT => false,
 				],
 			'monitor'	=> '\SelfApp\Helper\Selfsql::monitor',
 		],
@@ -32,9 +32,24 @@ return [
 				],
 
 			'attr'	=> [
-					PDO::ATTR_PERSISTENT => false,
+					\PDO::ATTR_PERSISTENT => false,
 				],
 			'monitor'	=> '\SelfApp\Helper\Selfsql::monitor',
 		],		
-	]
+	],
+
+
+	'mail'	=> [
+
+		'driver'       => 'smtp', #Supported: "smtp", "mail", "sendmail"
+	    'host' => 'smtp.exmail.qq.com',
+	    'port' => 465,
+	    'encryption' => 'ssl',
+	    'username' => "yourname",
+	    'password' =>"yourpass",
+	    'pretend' => 1,#When this option is enabled, the message will not be sent, but written in the log file
+
+	    'from' => ['address' => 'youraddress', 'name' => 'yoursitetitle'],
+
+	],	
 ];

@@ -24,3 +24,11 @@ $container['db'] = function ($c) {
 	$selfsql = new \SelfApp\Helper\Selfsql($settings);
 	return $selfsql;
 };
+
+// mail
+$container['mail'] = function ($c) {
+    $settings = (array) $c->get('settings')['my']['mail'];
+    $settings['logger'] = $c->logger;
+    $mail = new \LianzhMail\MailHelper($settings);
+    return $mail;
+};

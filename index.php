@@ -11,7 +11,7 @@ classLoader()->addPsr4('SelfApp\\', __DIR__ . '/app/classes');
 // Instantiate the app
 $settings = require __DIR__ . '/app/settings.php';
 
-// \SelfApp\Helper\ErrorHandler::init($setting['my']['ErrorHandler']);
+// \SelfApp\Service\ErrorHandler::init($setting['my']['ErrorHandler']);
 
 $app = new \Slim\App($settings);
 

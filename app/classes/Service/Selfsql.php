@@ -1,6 +1,6 @@
 <?php
 
-namespace SelfApp\Helper;
+namespace SelfApp\Service;
 
 use PDO;
 use LianzhSQL\Sql;
@@ -20,7 +20,7 @@ final class Selfsql
 	/**
 	 * 返回主库对象
 	 * 
-	 * @return \SelfApp\Db\SqlMaster
+	 * @return \LianzhSQL\SqlMaster
 	 */
 	public function sqlMaster()
 	{
@@ -30,7 +30,7 @@ final class Selfsql
 	/**
 	 * 返回主库对象
 	 * 
-	 * @return \SelfApp\Db\SqlSlaver
+	 * @return \LianzhSQL\SqlSlaver
 	 */
 	public function sqlSlaver()
 	{

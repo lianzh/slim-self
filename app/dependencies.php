@@ -27,7 +27,7 @@ $container['logger'] = function ($c) {
 // db
 $container['db'] = function ($c) {
 	$settings = $c->get('settings')['my']['db'];
-	$selfsql = new \SelfApp\Helper\Selfsql($settings);
+	$selfsql = new \SelfApp\Service\Selfsql($settings);
 	return $selfsql;
 };
 

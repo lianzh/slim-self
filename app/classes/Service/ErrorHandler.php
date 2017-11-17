@@ -1,6 +1,10 @@
 <?php
 
-namespace SelfApp\Helper;
+namespace SelfApp\Service;
+
+use SelfApp\Helper\Arrays;
+use SelfApp\Helper\CLI;
+use SelfApp\Helper\Halt;
 
 class ErrorHandler
 {

@@ -8,6 +8,8 @@ require __DIR__ . '/app/globalfunc.php';
 
 classLoader()->addPsr4('SelfApp\\', __DIR__ . '/app/classes');
 
+PHP_SAPI === 'cli' and \SelfApp\Helper\CLI::initCliArgv();
+
 // Instantiate the app
 $settings = require __DIR__ . '/app/settings.php';
 

@@ -191,7 +191,7 @@ function safe_file_put_contents($filename, & $content)
 function recursion_glob($dir, $pattern)
 {
     $dir = rtrim($dir, '/\\') . DIRECTORY_SEPARATOR;
-    $files = array();
+    $files = [];
 
     $dh = opendir($dir);
     if (!$dh) return $files;

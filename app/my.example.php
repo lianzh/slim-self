@@ -7,7 +7,7 @@ return [
 
 		'master'	=> [
 			'type' => 'mysql',
-			'dbpath'  => "mysql:host=127.0.0.1;port=3306;dbname=mautic_ma",
+			'dbpath'  => "mysql:host=127.0.0.1;port=3306;dbname=test",
 			'login'	=> 'root',
 			'password' => 'root',
 
@@ -23,7 +23,7 @@ return [
 
 		'slaver'	=> [
 			'type' => 'mysql',
-			'dbpath'  => "mysql:host=127.0.0.1;port=3306;dbname=mautic_ma",
+			'dbpath'  => "mysql:host=127.0.0.1;port=3306;dbname=test",
 			'login'	=> 'root',
 			'password' => 'root',
 

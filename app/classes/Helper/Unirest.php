@@ -8,7 +8,7 @@ namespace SelfApp\Helper;
 class Unirest
 {
 
-    private static $verifyPeer = true;
+    private static $verifyPeer = false;
     private static $socketTimeout = null;
     private static $defaultHeaders = [];
 

@@ -46,7 +46,7 @@ abstract class Debug
             array_shift($trace);
         }
         $last = array_shift($trace);
-        if (val($last, 'class') == 'SelfApp\\Helper\\Debug' && val($last, 'function') == 'dump')
+        if (Arrays::val($last, 'class') == 'SelfApp\\Helper\\Debug' && Arrays::val($last, 'function') == 'dump')
         {
             $last = array_shift($trace);
         }

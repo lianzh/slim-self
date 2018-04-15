@@ -5,9 +5,9 @@ use Slim\Http\Response;
 
 // Routes
 
-$app->get('/[{name}]', function (Request $request, Response $response, array $args) {
+// $app->get('/[{name}]', function (Request $request, Response $response, array $args) {
 	
-});
+// });
 
 $app->get('/[{name}]', function (Request $request, Response $response, array $args) {
     // Sample log message
@@ -19,7 +19,7 @@ $app->get('/[{name}]', function (Request $request, Response $response, array $ar
 
     print_r($arr);
 
-    \LianzhMail\MailHelper::thisIsExample($this->mail);
+    // \LianzhMail\MailHelper::thisIsExample($this->mail);
 
     // Render index view
     return $this->renderer->render($response, 'index.phtml', $args);
